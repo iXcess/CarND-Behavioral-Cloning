@@ -28,6 +28,13 @@ To collect the good driving behavior data, we use a simulator provided by Udacit
 
 [here]: https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f3a4_simulator-windows-64/simulator-windows-64.zip
 
+### Pre-processing the data
+The pre-processing sequence is first to crop the top and the bottom of the image to remove the sky and the part of the bonnet to improve the accuracy of the neural network. The pipeline is followed by a resize to (66,200,3) as stated by the NVIDIA's CNN input shape. Color space change to the YUV format is optional as there hasn't been much improvement at least in this simulation's case. The original images goes from: 
+
+<img src="./examples/original_images.png"/>
+
+<img src="./examples/tweaked_images.png"/>
+
 #### 1. An appropriate model architecture has been employed
 
 My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
