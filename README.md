@@ -22,16 +22,20 @@ This project is done based on NVIDIA's End-To-End Deep Learning for Self-Driving
 To collect the good driving behavior data, we use a simulator provided by Udacity. It can be downloaded from [here]. There are two different tracks which we can perform our behavioral cloning in which they are of different difficulties. At the beginning, the training data can be collected by clicking on the recording button and have the training data saved into a data folder. The data saved will be in form of a csv file. The csv file will contain few information separated by comma, eg. Center Camera Image, Left Camera Image, Right Camera Image, Steering Angle, Acceleration and Braking.
 
 
-<img src="./examples/Homepage_simulator.png" width="500" height="300"/>
-<img src="./examples/training.png" width="500" height="300"/>
+<img src="./examples/Homepage_simulator.png" width="400" height="300" align='center'/>
+<img src="./examples/training.png" width="400" height="300"/>
 
 
 [here]: https://d17h27t6h515a5.cloudfront.net/topher/2016/November/5831f3a4_simulator-windows-64/simulator-windows-64.zip
 
 ### Pre-processing the data
-The pre-processing sequence is first to crop the top and the bottom of the image to remove the sky and the part of the bonnet to improve the accuracy of the neural network. The pipeline is followed by a resize to (66,200,3) as stated by the NVIDIA's CNN input shape. Color space change to the YUV format is optional as there hasn't been much improvement at least in this simulation's case. The original images goes from: 
+The pre-processing sequence is first to crop the top and the bottom of the image to remove the sky and the part of the bonnet to improve the accuracy of the neural network. The pipeline is followed by a resize to (66,200,3) as stated by the NVIDIA's CNN input shape. Color space change to the YUV format is optional as there hasn't been much improvement at least in this simulation's case.
 
+Original:
+---
 <img src="./examples/original_image.jpg"/>
+Tweaked:
+---
 <img src="./examples/tweaked_image.jpg"/>
 
 #### 1. An appropriate model architecture has been employed
