@@ -31,11 +31,8 @@ To collect the good driving behavior data, we use a simulator provided by Udacit
 ### Pre-processing the data
 The pre-processing sequence is first to crop the top and the bottom of the image to remove the sky and the part of the bonnet to improve the accuracy of the neural network. The pipeline is followed by a resize to (66,200,3) as stated by the NVIDIA's CNN input shape. Color space change to the YUV format is optional as there hasn't been much improvement at least in this simulation's case. The original images goes from: 
 
-[original]
-[tweaked]
-
-![original][original_image.jpg]
-![tweaked][tweaked_image.jpg]
+![original][./examples/original_image.jpg]
+![tweaked][./examples/tweaked_image.jpg]
 
 <img src="./examples/original_image.png"/>
 
