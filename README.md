@@ -34,15 +34,30 @@ The pre-processing sequence is first to crop the top and the bottom of the image
 Original:
 ---
 <img src="./examples/original_image.jpg"/>
+
 Tweaked:
 ---
 <img src="./examples/tweaked_image.jpg"/>
 
-#### 1. An appropriate model architecture has been employed
+### Data augmentation
+The data available were mostly a right turn, so we balance out the distribution by augmentating the images collected.
+The only augmentation technique used as this is enough to train the vehicle to make few complete laps.
+1. Flipping the image and flipping the steering angle data
 
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+Of course, in the real world, different data augmentation techniques should be used so that the neural network will be able to generalize more. Examples would be:
+1. Flipping
+2. Rotation
+3. Shearing
+4. Translation
+5. Adding random shadows
+6. Adding random color tint
+7. Adding random image distortion
 
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
+### Model Architecture
+
+The model employed is based and tweaked on NVIDIA's DAVE-2 CNN network. This model is used as a base reference as it has been proven a working model in this particular application. The summary of the model is as below:
+
+<img src="./examples/model.jpg"/>
 
 #### 2. Attempts to reduce overfitting in the model
 
