@@ -1,3 +1,10 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 # **Behavioral Cloning** 
 ---
 
@@ -16,8 +23,8 @@ Method
 ---
 
 <img src="./examples/method.jpg"/>
-[video here]: https://www.youtube.com/watch?v=NJU9ULQUwng
-[in this link]: https://devblogs.nvidia.com/deep-learning-self-driving-cars/
+![video here]: https://www.youtube.com/watch?v=NJU9ULQUwng
+![in this link]: https://devblogs.nvidia.com/deep-learning-self-driving-cars/
 
 ### Model Architecture and Training Strategy
 
@@ -26,7 +33,7 @@ Method
 To collect the good driving behavior data, we use a simulator provided by Udacity. It can be downloaded from [here]. There are two different tracks which we can perform our behavioral cloning in which they are of different difficulties. At the beginning, the training data can be collected by clicking on the recording button and have the training data saved into a data folder. The data saved will be in form of a csv file. The csv file will contain few information separated by comma, eg. Center Camera Image, Left Camera Image, Right Camera Image, Steering Angle, Acceleration and Braking.
 
 
-<img src="./examples/Homepage_simulator.png" width="400" height="300" style='align:center'/>
+<img src="./examples/Homepage_simulator.png" width="400" height="300" class="center"/>
 <img src="./examples/training.png" width="400" height="300" style='align:center'/>
 
 Summary of the data
