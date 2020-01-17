@@ -12,8 +12,8 @@ The goals / steps of this project are the following:
 
 This project is done based on NVIDIA's End-To-End Deep Learning for Self-Driving Cars which can be found [in this link] and a [video here].
 
-![video here]: https://www.youtube.com/watch?v=NJU9ULQUwng
-![in this link]: https://devblogs.nvidia.com/deep-learning-self-driving-cars/
+[video here]: https://www.youtube.com/watch?v=NJU9ULQUwng
+[in this link]: https://devblogs.nvidia.com/deep-learning-self-driving-cars/
 
 Method
 ---
@@ -27,8 +27,8 @@ Method
 To collect the good driving behavior data, we use a simulator provided by Udacity. It can be downloaded from [here]. There are two different tracks which we can perform our behavioral cloning in which they are of different difficulties. At the beginning, the training data can be collected by clicking on the recording button and have the training data saved into a data folder. The data saved will be in form of a csv file. The csv file will contain few information separated by comma, eg. Center Camera Image, Left Camera Image, Right Camera Image, Steering Angle, Acceleration and Braking.
 
 
-<img src="./examples/Homepage_simulator.png" width="400" height="300" align="middle"/>
-<img src="./examples/training.png" width="400" height="300" style='align:center'/>
+<img src="./examples/Homepage_simulator.png" width="400" height="300"/>
+<img src="./examples/training.png" width="400" height="300"/>
 
 Summary of the data
 ---
@@ -78,16 +78,9 @@ Model used
 ### Training
 
 The model is splitted into 80:20 for training and validation. The model contains one 50% dropout layer right before the dense layer in order to reduce overfitting. The model used an adam optimizer, so the learning rate was not tuned manually.
+I finally randomly shuffled the data and run the training for 10 epochs, 128 batch size and ran the data on a GTX 1050.
 
+Result
+---
+<img src="./examples/result.jpg"/>
 
-#### 4. Appropriate training data
-
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
-
-For details about how I created the training data, see the next section. 
-
-
-
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
-
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
