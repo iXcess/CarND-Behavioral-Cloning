@@ -10,8 +10,9 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
-This project is done based on NVIDIA's End-To-End Deep Learning for Self-Driving Cars which can be found [in this link]
+This project is done based on NVIDIA's End-To-End Deep Learning for Self-Driving Cars which can be found [in this link] and a [video here].
 
+[video here]: https://www.youtube.com/watch?v=NJU9ULQUwng
 [in this link]: https://devblogs.nvidia.com/deep-learning-self-driving-cars/
 
 ### Model Architecture and Training Strategy
