@@ -8,7 +8,6 @@ The goals / steps of this project are the following:
 * Build, a convolution neural network in Keras that predicts steering angles from images
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one without leaving the road
-* Summarize the results with a written report
 
 This project is done based on NVIDIA's End-To-End Deep Learning for Self-Driving Cars which can be found [in this link] and a [video here].
 
